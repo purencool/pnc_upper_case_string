@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\colorapi\Plugin\DataType;
+namespace Drupal\pnc_upper_case_string\Plugin\DataType;
 
 use Drupal\Core\TypedData\ComplexDataInterface;
 

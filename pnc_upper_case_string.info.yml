@@ -1,4 +1,4 @@
-name: 'pnc_entity_data_type_api'
+name: 'pnc_upper_case_string'
 type: module
 description: 'My Awesome Module'
 core: 8.x

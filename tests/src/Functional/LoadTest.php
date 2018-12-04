@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\pnc_entity_data_type_api\Functional;
+namespace Drupal\Tests\pnc_upper_case_string\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group pnc_entity_data_type_api
+ * @group pnc_upper_case_string
  */
 class LoadTest extends BrowserTestBase {
 

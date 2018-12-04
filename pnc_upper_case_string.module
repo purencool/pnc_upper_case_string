@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains pnc_entity_data_type_api.module.
+ * Contains pnc_upper_case_string.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
