@@ -15,7 +15,7 @@ class PncDefinition extends MapDataDefinition implements PncDefinitionInterface 
    * {@inheritdoc}
    */
   public function getPncUpperCaseString() {
-    return 'This is the upper case string'; //$this->get('')->get('pnc_upper_case_string')->getValue();
+    return 0; //$this->get('')->get('pnc_upper_case_string')->getValue();
   }
 
 
