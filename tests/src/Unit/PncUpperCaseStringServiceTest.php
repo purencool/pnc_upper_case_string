@@ -32,7 +32,20 @@ class PncUpperCaseStringServiceTest extends UnitTestCase {
    */
   public function testIsValidCharacterString() {
 
-    $this->assertEquals(1, $this->unit->isValidCharacterString('a'));
+    $positive = ['a', 'A', 'aaaaaaaa', 'AAAAAA', 'aaaaAAAA', ' ', ' aA'];
+
+    foreach ($positive as $positiveValue) {
+      $this->assertEquals(1, $this->unit->isValidCharacterString($positiveValue));
+    }
+
+
+    $positive = ['1', '@', '111111', '@@@@@@@', '@@@@1111', ',', '///'];
+
+    foreach ($positive as $positiveValue) {
+      $this->assertEquals(0, $this->unit->isValidCharacterString($positiveValue));
+    }
+
+
   }
 
 

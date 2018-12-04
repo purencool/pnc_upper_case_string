@@ -17,6 +17,6 @@ interface CharacterInterface extends StringInterface {
    *
    * @var string
    */
-  const PNC_UPPER_CASE_STRING_REGEX = '/^([A-Za-z])$/';
+  const PNC_UPPER_CASE_STRING_REGEX = '/[a-zA-Z ]/';
 
 }
