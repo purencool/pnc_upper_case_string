@@ -13,10 +13,12 @@ use Drupal\pnc_upper_case_string\Service\PncUpperCaseStringService;
  */
 class PncUpperCaseStringServiceTest extends UnitTestCase {
 
+
   /**
    * @var  $unit
    */
   protected $unit;
+
 
   /**
    * Before a test method is run, setUp() is invoked.
@@ -44,8 +46,6 @@ class PncUpperCaseStringServiceTest extends UnitTestCase {
     foreach ($positive as $positiveValue) {
       $this->assertEquals(0, $this->unit->isValidCharacterString($positiveValue));
     }
-
-
   }
 
 
