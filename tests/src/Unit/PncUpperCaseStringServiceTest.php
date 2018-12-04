@@ -3,15 +3,19 @@
 namespace Drupal\Tests\pnc_upper_case_string\Unit;
 
 use Drupal\Tests\UnitTestCase;
-use Drupal\pnc_upper_case_string\TypedData\Definition\PncDefinition;
+use Drupal\pnc_upper_case_string\Service\PncUpperCaseStringService;
+
 
 /**
  * Simple test to ensure that asserts pass.
  *
  * @group phpunit_example
  */
-class PncDefinitionTest extends UnitTestCase {
+class PncUpperCaseStringServiceTest extends UnitTestCase {
 
+  /**
+   * @var  $unit
+   */
   protected $unit;
 
   /**
@@ -19,16 +23,27 @@ class PncDefinitionTest extends UnitTestCase {
    * Create new unit object.
    */
   public function setUp() {
-    $this->unit = new PncDefinition();
+    $this->unit = new PncUpperCaseStringService();
   }
+
 
   /**
    * @covers Drupal\phpunit_example\Unit::setLength
    */
-  public function testUpperCaseString() {
+  public function testIsValidCharacterString() {
 
-    $this->assertEquals(0, $this->unit->getPncUpperCaseString());
+    $this->assertEquals(1, $this->unit->isValidCharacterString('a'));
   }
+
+
+  /**
+   * @covers Drupal\phpunit_example\Unit::setLength
+   */
+  public function testGetPncUpperCaseString() {
+
+    $this->assertEquals('a', $this->unit->getPncUpperCaseString('a'));
+  }
+
 
   /**
    * Once test method has finished running, whether it succeeded or failed,

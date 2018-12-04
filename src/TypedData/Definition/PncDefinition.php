@@ -6,7 +6,9 @@ use Drupal\Core\TypedData\MapDataDefinition;
 
 
 /**
- * Definition class for Typed Data API Color Complex Data types.
+ * Class PncDefinition
+ *
+ * @package Drupal\pnc_upper_case_string\TypedData\Definition
  */
 class PncDefinition extends MapDataDefinition implements PncDefinitionInterface {
 

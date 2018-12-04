@@ -3,7 +3,9 @@
 namespace Drupal\pnc_upper_case_string\TypedData\Definition;
 
 /**
- * Interface for Typed Data API Color Complex Data definition.
+ * Interface PncDefinitionInterface
+ *
+ * @package Drupal\pnc_upper_case_string\TypedData\Definition
  */
 interface PncDefinitionInterface {
 

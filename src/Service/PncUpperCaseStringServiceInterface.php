@@ -3,7 +3,9 @@
 namespace Drupal\pnc_upper_case_string\Service;
 
 /**
- * Interface for the pnc_upper_case_string Service class.
+ * Interface PncUpperCaseStringServiceInterface
+ *
+ * @package Drupal\pnc_upper_case_string\Service
  */
 interface PncUpperCaseStringServiceInterface {
 
