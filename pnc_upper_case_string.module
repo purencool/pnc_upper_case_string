@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains pnc_entity_data_type_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pnc_upper_case_string_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pnc_entity_data_type_api module.
+    case 'help.page.pnc_upper_case_string':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pnc_upper_case_string_theme() {
+  return [
+    'pnc_upper_case_string' => [
+      'render element' => 'children',
+    ],
+  ];
+}

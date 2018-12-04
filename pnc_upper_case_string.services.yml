@@ -1,0 +1,6 @@
+parameters:
+  pnc_upper_case_string.service.class: 'Drupal\pnc_upper_case_string\Service\PncUpperCaseStringService'
+
+services:
+  pnc_upper_case_string.service:
+    class: '%pnc_upper_case_string.service.class%'
